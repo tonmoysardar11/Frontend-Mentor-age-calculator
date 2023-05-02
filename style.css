@@ -5,21 +5,26 @@
   font-family: 'Poppins', sans-serif;
 
 }
+body{
+  display: grid;
+      place-content: center;
+      min-height: 100vh;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
   }
   main{
     background-color: hsl(0, 0%, 100%);
-      width: 90%;
-      max-width: 600px;
-      position: absolute;
+    width: min(600px, 90%);
+      /* position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); */
       border-radius: 20px 20px 100px 20px;
-      box-shadow: 0 0 20px black;
+      box-shadow: 0 0 20px #000300;
       margin: auto;
+      
   }
   
 
@@ -35,9 +40,7 @@
     border: 1px solid black;
     padding-left: 5px;
   }
-  /* #day:focus,#month:focus,#year:focus{
-    border: 1px solid red;
-  } */
+
   .selector form{
     display: flex;
     justify-content: space-around;
@@ -47,10 +50,10 @@
     font-size: 10px;
   }
   .selector{
-    margin: 30px 20px 0px 20px;
+    margin: 30px 20px;
     color: hsl(0, 1%, 44%);
     width: 90%;
-    max-width: 375px;
+    
   }
   #dayErr,#monthErr,#yearErr{
     opacity: 1;
