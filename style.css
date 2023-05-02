@@ -50,7 +50,7 @@ body{
     font-size: 10px;
   }
   .selector{
-    margin: 30px 20px;
+    margin: 40px 20px;
     color: hsl(0, 1%, 44%);
     width: 90%;
     
@@ -91,7 +91,7 @@ body{
     position: relative;
   }
 
-  @media screen  and (min-width:375px){
+  @media screen  and (min-width:450px){
     button{
       left: 95%;
     }
